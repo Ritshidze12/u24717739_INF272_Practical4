@@ -1,0 +1,80 @@
+﻿
+
+
+@model IEnumerable<u24717739_INF272_Practical4.Models.Student_Model>
+@{
+    ViewBag.Title = "StudentsView";
+}
+
+<h2>Students View</h2>
+
+
+<!-- Bootstrap and Custom CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+<link href="@Url.Content("~/Content/content.css")" rel="stylesheet" />
+
+<table class="table" id="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.StudentNumber)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstName)</th>
+            <th>@Html.DisplayNameFor(model => model.surname)</th>
+            <th>@Html.DisplayNameFor(model => model.email)</th>
+            <th>Link to personal page</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.StudentNumber)</td>
+                <td>@Html.DisplayFor(modelItem => item.FirstName)</td>
+                <td>@Html.DisplayFor(modelItem => item.surname)</td>
+                <td>@Html.DisplayFor(modelItem => item.email)</td>
+                <td>
+                    <button onclick="window.location.href='@Url.Content(item.MyLink)'" class="link-btn">
+                        LINK
+                    </button>
+                </td>
+                <td>
+                    <button onclick="deleteRow(this)" class="delete-btn">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- JavaScript for row deletion and color change -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Task 5: Function to delete a row
+    function deleteRow(button) {
+        // Get the row (parent <tr> of the button) and remove it
+        var row = button.parentNode.parentNode;
+        row.parentNode.removeChild(row);
+    }
+
+    window.onload = function () {
+        const table = document.getElementById('table');
+        const rows = table.getElementsByTagName('tr');
+
+        for (let i = 1; i < rows.length; i++) {
+            const FirstName = rows[i].cells[1]; // Second column (First Name)
+            if (FirstName) {
+                const nameText = FirstName.textContent.trim();
+                const firstLetter = nameText.charAt(0).toUpperCase();
+
+                if (firstLetter === "R") {
+                    for (let cell of rows[i].cells) {
+                        cell.style.color = "red";
+                    }
+                }
+            }
+        }
+    };
+</script>
+

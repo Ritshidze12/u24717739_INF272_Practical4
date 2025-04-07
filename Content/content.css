@@ -1,0 +1,200 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #c3e6c3; /* Light green background */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main heading */
+h1 {
+    color: #4a794a; /* Green color */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Navigation bar */
+.nav {
+    background-color: #E6ECE6; /* Light gray-green background */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.nav-pills .nav-link {
+    background-color: #4CAF50; /* Green buttons */
+    color: white;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+    .nav-pills .nav-link.active {
+        background-color: #4CAF50; /* Same green for active state */
+        color: white;
+    }
+
+    .nav-pills .nav-link:hover {
+        background-color: #366636; /* Darker green on hover */
+    }
+
+/* Card styling (for Msizi.html) */
+.card {
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: white;
+    border-bottom: none;
+    padding: 15px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+/* Section headings inside cards */
+.card-header h2 {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+/* Paragraph text inside cards */
+.card-body p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Images */
+.card-body img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.bio-section img {
+    float: left;
+    margin-right: 15px;
+}
+
+.hobbies-section img {
+    float: right;
+    margin-left: 15px;
+}
+
+/* Clear floats */
+.bio-section, .hobbies-section {
+    overflow: hidden;
+}
+
+/* Section styling (for Ritshidze.html) */
+section {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    min-height: 400px;
+}
+
+    /* Section headings */
+    section h2 {
+        color: black;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    /* Paragraph text */
+    section p {
+        color: black;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* Images */
+    section img {
+        max-width: 150px;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+/* Modules section */
+.modules-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+    .modules-section ul li {
+        color: black;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+/* Back to Students List link */
+a.back-to-list {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+    a.back-to-list:hover {
+        background-color: #366636;
+    }
+
+/* Table styling (for StudentsView.cshtml) */
+.table {
+    background-color: white;
+    border-collapse: collapse;
+}
+
+    .table th {
+        background-color: #4CAF50; /* Green header */
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .table td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+
+/* Link button */
+.link-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .link-btn:hover {
+        background-color: #366636; /* Darker green on hover */
+    }
+
+/* Delete button */
+.delete-btn {
+    background-color: #4CAF50; /* Light gray */
+    color: black;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .delete-btn:hover {
+        background-color: #B0B0B0; /* Slightly darker gray on hover */
+    }

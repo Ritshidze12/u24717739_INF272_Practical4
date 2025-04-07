@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Msizi Profile</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- content CSS -->
+    <link rel="stylesheet" href="/Content/content.css">
+</head>
+<body>
+    <h1>Msizi Gumede</h1>
+
+    <!-- Navigation Menu with Bootstrap -->
+    <nav>
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="/Home/Index">Main</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Students/StudentsView">List</a></li>
+            <li class="nav-item"><a class="nav-link" href="Ritshidze.html">Ritshidze</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Msizi.html">Msizi</a></li>
+            <li class="nav-item"><a class="nav-link" href="Gundo.html">Gundo</a></li>
+            <li class="nav-item"><a class="nav-link" href="Boitshoko.html">Boitshoko</a></li>
+            <li class="nav-item"><a class="nav-link" href="Walter.html">Walter</a></li>
+            <li class="nav-item"><a class="nav-link" href="Javascript:history.back()">Back</a></li>
+        </ul>
+    </nav>
+
+    <!-- Use Bootstrap Cards for each section -->
+    <div class="container">
+        <!-- Biography Section -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Biography and Background</h2>
+            </div>
+            <div class="card-body">
+                <img src="/Content/HTML/Images/black-widow-1.jpg" alt="Msizi's photo" class="img-fluid float-left mr-3" style="max-width: 200px;" />
+                <p>Msizi Gumede was born in KwaZulu-Natal in a village called Jozini. He went to Mandla Mthethwa School of Excellence.</p>
+                <p>He studies BCom Informatics because he believes computers are the future of this world.</p>
+            </div>
+        </div>
+
+        <!-- Hobbies Section -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Hobbies</h2>
+            </div>
+            <div class="card-body">
+                <p>Enjoys coding and playing rugby.</p>
+                <img src="/Content/HTML/Images/IMG-20250310-WA0103.jpg" alt="Msizi's photo" class="img-fluid float-right ml-3" style="max-width: 200px;" />
+            </div>
+        </div>
+
+        <!-- Modules Section -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Modules</h2>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Semester 1</th>
+                            <th>Semester 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>INF 272</td>
+                            <td>JCP 201</td>
+                        </tr>
+                        <tr>
+                            <td>INF 214</td>
+                            <td>INF 272</td>
+                        </tr>
+                        <tr>
+                            <td>INF 271</td>
+                            <td>FRK 212</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Students List Link -->
+    <a href="/Students/StudentsView" class="back-to-list">Back to Students List</a>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
